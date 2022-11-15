@@ -6,7 +6,7 @@ require("colors");
 const connectDB = async () => {
   try {
     const conn = await mongoose.connect(
-      process.env.MONGODB_URI
+      process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/apitest"
     );
     console.log(`MongoDB Connected Successfully!`.bgGreen.inverse);
   } catch (error) {
