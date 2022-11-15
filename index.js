@@ -2,7 +2,7 @@ const express = require("express");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-
+require("dotenv").config();
 require("colors");
 const connectDB = require("./config/config");
 
